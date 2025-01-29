@@ -402,10 +402,10 @@ run().catch(console.dir);
 
 
 
-// app.get('/', (req, res) => {
-//   res.send("This is Skill Path Server")
-// })
+app.get('/', (req, res) => {
+  res.send("This is Skill Path Server")
+})
 
-// app.listen(port, () => {
-//   console.log(`surver is running ${port}`)
-// })
+app.listen(port, () => {
+  console.log(`surver is running ${port}`)
+})
