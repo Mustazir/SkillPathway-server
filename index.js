@@ -92,16 +92,16 @@ async function run() {
     })
 
 
-    app.get('/sessions/approve', async (req, res) => {
-      const query = { status: "Approved" };
-      const result = await sessionsCollections.find(query).toArray()
-      res.send(result)
-    })
+    // app.get('/sessions/approve', async (req, res) => {
+    //   const query = { status: "Approved" };
+    //   const result = await sessionsCollections.find(query).toArray()
+    //   res.send(result)
+    // })
 
-    app.post('/materials', async (req, res) => {
-      const data = req.body
-      const result = await materialsCollections.insertOne(data)
-      res.send(result)
+    // app.post('/materials', async (req, res) => {
+    //   const data = req.body
+    //   const result = await materialsCollections.insertOne(data)
+    //   res.send(result)
     })
 
     app.get('/materials', async (req, res) => {
